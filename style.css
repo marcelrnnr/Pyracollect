@@ -1,26 +1,29 @@
 
+
 body {
-  font-family: Arial, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: grey; /* Änderung der Hintergrundfarbe */
+  background-color: rgb(49, 53, 49);
+  /* Änderung der Hintergrundfarbe */
 }
 
 header {
-  background-color: rgb(71, 71, 71);/* Anpassung an das Farbschema der Pfanner-Website */
+  background-color: rgb(49, 53, 49);
+  /* Anpassung an das Farbschema der Pfanner-Website */
   color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
+  
 }
 
 main {
   width: 100%;
-  background-color: grey;
+  background-color: rgb(49, 53, 49);
 }
-
 
 
 .header-wrapper {
@@ -47,39 +50,29 @@ nav ul li a {
   text-decoration: none;
 }
 
+
 .navbar ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
 
-.navbar-icons{
+.navbar-icons {
   display: flex;
 }
 
-.hero-section h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
 
-.hero-section p {
-  font-size: 18px;
-  margin-bottom: 40px;
-}
 
-.btn {
-  display: inline-block;
-  background-color: #fff;
-  color: #ff9800;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
 
-.product-grid {                             /*einzelne Productsection*/
+
+
+
+
+.product-grid {
+  /*einzelne Productsection*/
   position: relative;
   height: 100vh;
-  background-color: grey; 
+  background-color: gr138619ey;
   display: flex;
   flex-direction: column;
   scroll-snap-align: center;
@@ -88,9 +81,10 @@ nav ul li a {
 .under-header {
   width: 100%;
   height: 60vh;
-  background-color: #1c5508; 
+  background-color: rgb(49, 53, 49);
   z-index: 1;
 }
+
 .under-header img {
   width: 100%;
   height: 100%;
@@ -99,7 +93,7 @@ nav ul li a {
 
 
 .product-section {
-  background-color: #1c5508; 
+  background-color: rgb(49, 53, 49);
   display: flex;
   flex-direction: column;
 }
@@ -109,6 +103,7 @@ nav ul li a {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 0px;
+
 }
 
 .product-card {
@@ -123,32 +118,66 @@ nav ul li a {
   z-index: 2;
 }
 
-.headline-container{
+.headline-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  
+
 }
 
-.headline-item{
-  
+.headline-item {
   width: 50%;
   background-color: white;
   height: 100%;
+
 }
-.content-container{
+
+.content-container {
   width: 100%;
   height: 100%;
   background-color: white;
-  padding: 20px;
   display: flex;
   flex-direction: row;
 }
 
+/*Sorten*/
+
+.sorten-Container {
+  /* ?? */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+/*Produktbilder tauschen*/
+
+.basicProdukte{
+  display: inline-block;
+  width: 1024px;
+  height: 768px;
+  background-image: url("Pyracollect/images/Classic Pyramids/REDNormalPyramid.png"); /* Default image */
+}
+
+.basicProdukte::after{
+background-image: url("Pyracollect/images/Classic Pyramids/blueNormalPyramid.png");
+}
+
 /* Zusätzlicher CSS-Code für den Abstand unterhalb der product-card */
-.product-card + * {
+.product-card+* {
   margin-top: 20px;
 }
+
 .product-card h3 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -161,11 +190,13 @@ nav ul li a {
 
 /* Footer */
 footer {
-  background-color: #07402c; /* Anpassung an das Farbschema der Pfanner-Website */
+  background-color: rgb(49, 53, 49);
+  /* Anpassung an das Farbschema der Pfanner-Website */
   color: #fff;
   padding: 20px;
   text-align: center;
 }
+
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
@@ -218,15 +249,17 @@ footer ul li a {
   height: auto;
 }
 
-.navbar-icons{
+.navbar-icons {
   display: flex;
 }
 
-.navbar-icons li{
+.navbar-icons li {
   list-style: none;
   flex-direction: row;
   margin-left: 50px;
 }
+
+
 
 /* Scroll Animation mit Snaps */
 @media (min-height: 30em) {
@@ -240,20 +273,41 @@ footer ul li a {
 
 /* Section 1 */
 
-.img-container{
- width: 50%;
- height: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
+.img-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.img-container img{
- object-fit: contain;
- height: 80%;
- width: 80%;
+
+
+
+.img-container img {
+  object-fit: contain;
+  height: 80%;
+  width: 80%;
 }
-.text-container{
+
+.text-container {
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding: 10px 20px 10px 20px;
+}
+
+/*footer*/
+
+.line {
+  border-top: 6px solid black;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  .product-grid{
+    width: 100%;
+  }
+
 }
