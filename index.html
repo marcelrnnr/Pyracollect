@@ -2,12 +2,14 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Willkommen bei Pyracollect</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+
 </head>
 
 <body>
+
   <header>
     <div class="header-wrapper">
       <nav class="navbar">
@@ -15,40 +17,50 @@
           <a href="index.html"><img src="images/Pyrramide_Logo.png" alt="Pfanner Logo" width="auto" height="70"> </a>
 
         </div>
-        <div class="navbar-flex">
+        <div class="navbar-flex no-mobile no-tablet">
           <ul>
             <li><a href="#">Produkte</a></li>
             <li><a href="#">Über uns</a></li>
             <li><a href="#">Pyrawissen</a></li>
             <li><a href="#">Ägyptenreise</a></li>
-            <li><a href="#">Über uns</a></li>
-            <li><a href="#">Pyrawissen</a></li>
-            <li><a href="#">Ägyptenreise</a></li>
+            <li><a href="#">Kontakt</a></li>
           </ul>
         </div>
 
         <div class="navbar-icons">
-          <li><a href="#"><img src="images/Classic Pyramids/icons/Icon feather-search.png" alt="search icon"
+          <div class="hamburger-menu no-desktop">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Produkte</a></li>
+              <li><a class="menu__item" href="#">Über uns</a></li>
+              <li><a class="menu__item" href="#">Pyrawissen</a></li>
+              <li><a class="menu__item" href="#">Ägyptenreise</a></li>
+              <li><a class="menu__item" href="#">Kontakt</a></li>
+            </ul>
+          </div>
+          <li><a href="#"><img class="search-icon" src="images/Classic Pyramids/icons/Icon feather-search.png" alt="search icon"
                 width="auto" height="17"></a></li>
-          <li><a href="#"><img src="images/flag.webp" alt="language" width="auto" height="15"></a></li>
+          <li><a href="#"><img class="no-mobile no-tablet" src="images/flag.webp" alt="language" width="auto" height="15"></a></li>
         </div>
       </nav>
     </div>
   </header>
 
   <main>
-
-
-
-    <section class="product-section">
-
-      <div class="product-grid">
+    <div class="product-section">
+      <section class="panel product-grid product1">
         <div class="under-header">
           <img src="images/ClassicPyramidBannerwithoutlogo.png" alt="Produktkette1">
         </div>
         <div class="product-card">
           <div class="headline-container">
-            <h2 class="headline-item">Klassische Pyramiden</h2>
+            <div class="headline-item">
+              <h2>Klassische Pyramiden</h2>
+            </div>
           </div>
           <div class="content-container">
 
@@ -62,8 +74,9 @@
                 - 200g Gewicht<br>
                 - zum sammeln, tauschen, dekorieren
               </p>
-              <p>
-                Mit ihren glatten Oberflächen und präzisen Kanten laden sie dazu ein, sie in die Hand zu nehmen und ihre
+              <p class="no-mobile">
+                Mit ihren glatten Oberflächen und präzisen Kanten laden sie dazu ein, sie in die Hand zu nehmen und
+                ihre
                 symmetrische Schönheit zu bewundern. Ihre vielfältigen Farben und Muster lassen keine Langeweile
                 aufkommen
                 und machen jedes Stück zu einem einzigartigen Sammlerobjekt.</p>
@@ -76,7 +89,7 @@
                         height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="">Rot</a>
+                    <a  class="no-mobile"href="">Rot</a>
                   </div>
                 </div>
 
@@ -86,7 +99,7 @@
                         height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Blau</a>
+                    <a  class="no-mobile"href="#">Blau</a>
                   </div>
                 </div>
 
@@ -96,7 +109,7 @@
                         height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Grün</a>
+                    <a class="no-mobile" href="#">Grün</a>
                   </div>
                 </div>
 
@@ -106,7 +119,7 @@
                         height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Gelb</a>
+                    <a class="no-mobile" href="#">Gelb</a>
                   </div>
                 </div>
                 <div class="sorte-orange">
@@ -115,17 +128,17 @@
                         height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Orange</a>
+                    <a  class="no-mobile"href="#">Orange</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
 
-      <div class="product-grid">
+      <section class="panel product-grid product2">
         <div class="under-header">
           <img src="images/Section2/baner_split2height.png" alt="Produktkette2">
         </div>
@@ -145,7 +158,7 @@
                 - 100% Spaß im Wasser <br>
                 - sammeln, tauschen, spielen
               </p>
-              <p>Die Water Pyramids sind ein Hit für Poolpartys, Strandtage oder sogar für deinen eigenen Garten. Mit
+              <p class="no-mobile">Die Water Pyramids sind ein Hit für Poolpartys, Strandtage oder sogar für deinen eigenen Garten. Mit
                 ihrer einzigartigen Pyramidenform sind sie der Blickfang schlechthin. Deine Freunde werden begeistert
                 sein
                 und sich darum reißen, mit diesen lustigen aufblasbaren Pyramiden zu spielen.</p>
@@ -155,7 +168,7 @@
                     <a href="#"> <img src="images/Section2/Icons/Polygon 7.png" alt="" width="auto" height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Pink</a>
+                    <a class="no-mobile" href="#">Pink</a>
                   </div>
                 </div>
 
@@ -164,7 +177,7 @@
                     <a href="#"> <img src="images/Section2/Icons/Polygon 6.png" alt="" width="auto" height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Orange</a>
+                    <a class="no-mobile" href="#">Orange</a>
                   </div>
                 </div>
 
@@ -173,7 +186,7 @@
                     <a href="#"> <img src="images/Section2/Icons/Polygon 8.png" alt="" width="auto" height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Grün</a>
+                    <a class="no-mobile" href="#">Grün</a>
                   </div>
                 </div>
                 <div class="sorte-W-blau">
@@ -181,7 +194,7 @@
                     <a href="#"> <img src="images/Section2/Icons/Polygon 9.png" alt="" width="auto" height="20px"></a>
                   </div>
                   <div class="sorten-namen" class="sorten-namen">
-                    <a href="#">Blau</a>
+                    <a class="no-mobile" href="#">Blau</a>
                   </div>
                 </div>
 
@@ -190,17 +203,16 @@
                     <a href="#"> <img src="images/Section2/Icons/Polygon 10.png" alt="" width="auto" height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Rot</a>
+                    <a class="no-mobile" href="#">Rot</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-
-      <div class="product-grid">
+      <section class="panel product-grid product3">
         <div class="under-header">
           <img src="images/section3/ecoPyramidbanner.png" alt="Produktkette3">
         </div>
@@ -220,8 +232,9 @@
                 - einzigartiger Hingucker <br>
                 - Dekoartikel
               </p>
-              <p>Die Eco Pyramids sind wahre Meisterwerke der Nachhaltigkeit. Sie werden aus recycelten und
-                umweltfreundlichen Materialien hergestellt, um unseren Planeten zu schützen und eine grüne Zukunft zu
+              <p class="no-mobile">Die Eco Pyramids sind wahre Meisterwerke der Nachhaltigkeit. Sie werden aus recycelten und
+                umweltfreundlichen Materialien hergestellt, um unseren Planeten zu schützen und eine grüne Zukunft
+                zu
                 fördern. Mit jedem Kauf einer Eco Pyramid trägst du aktiv zum Erhalt unserer Umwelt bei.</p>
               <div class="sorten-Container">
                 <div class="sorte-bambus">
@@ -230,7 +243,7 @@
                         height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Bambus</a>
+                    <a class="no-mobile" href="#">Bambus</a>
                   </div>
                 </div>
                 <div class="sorte-karton">
@@ -239,7 +252,7 @@
                         height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Karton</a>
+                    <a class="no-mobile" href="#">Karton</a>
                   </div>
                 </div>
                 <div class="sorte-zedernholz">
@@ -248,34 +261,38 @@
                         height="20px"></a>
                   </div>
                   <div class="sorten-namen">
-                    <a href="#">Zedernholz</a>
+                    <a class="no-mobile" href="#">Zedernholz</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-
-
-
-    </section>
-
+      </section>
+    </div>
   </main>
 
   <footer>
     <div class="footer-wrapper">
-      <p>&copy; 2023 Pyracollect. Alle Rechte vorbehalten.</p>
-      <ul>
-        <li><a href="#">SITE MAP</a></li>
-        <li><a href="#">IMPRESSUM</a></li>
-        <li><a href="#">AGB</a></li>
-        <li><a href="#">Datenschutz</a></li>   
-        <li><a href="#">COOKIES</a></li>
-      </ul>
+      <div class="texte">
+        <p>&copy; 2023 Pyracollect. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+          <ul>
+              <li><a href="#">SITE MAP</a></li>
+              <li><a href="#">IMPRESSUM</a></li>
+              <li><a href="#">AGB</a></li>
+              <li><a href="#">Datenschutz</a></li>
+              <li><a href="#">COOKIES</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="line"></div>
     </div>
   </footer>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollToPlugin.min.js"></script>
+  <script defer src="script.js"></script>
 </body>
 
 </html>
