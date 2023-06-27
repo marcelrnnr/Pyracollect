@@ -8,7 +8,7 @@
 
 </head>
 
-<body>
+<body onload="showImageKlassisch(1),showImageWasser(1),showImageUmwelt(1)">
 
   <header>
     <div class="header-wrapper">
@@ -33,7 +33,7 @@
             <label class="menu__btn" for="menu__toggle">
               <span></span>
             </label>
-        
+
             <ul class="menu__box">
               <li><a class="menu__item" href="#">Produkte</a></li>
               <li><a class="menu__item" href="#">Über uns</a></li>
@@ -42,9 +42,12 @@
               <li><a class="menu__item" href="#">Kontakt</a></li>
             </ul>
           </div>
-          <li><a href="#"><img class="search-icon" src="images/Classic Pyramids/icons/Icon feather-search.png" alt="search icon"
-                width="auto" height="17"></a></li>
-          <li><a href="#"><img class="no-mobile no-tablet" src="images/flag.webp" alt="language" width="auto" height="15"></a></li>
+          <li><a href="#"><img class="search-icon" src="images/ClassicPyramids/icons/Icon feather-search.png"
+                alt="search icon" width="auto" height="17"></a></li>
+          <div class="language-logo">
+            <li><a href="#"><img class="no-mobile no-tablet" src="images/flag.webp" alt="language" width="auto"
+                  height="15"></a></li>
+          </div>
         </div>
       </nav>
     </div>
@@ -64,11 +67,24 @@
           </div>
           <div class="content-container">
 
-            <div class="img-container">
-              <img class="basicProdukte" src="images/Classic Pyramids/REDnormalPyramid.png" alt="redClassic">
+            <div id="imageContainer" class="img-container"> <!--Code von Shu-->
+              <img src="images/ClassicPyramids/REDnormalPyramid.png" alt="Image 1" class="imageKlassik" id="imageKlassik1">
+              <img src="images/ClassicPyramids/blueNormalPyramid.png" alt="Image 2" class="imageKlassik" id="imageKlassik2">
+              <img src="images/ClassicPyramids/greenNormalPyramid.png" alt="Image 3" class="imageKlassik" id="imageKlassik3">
+              <img src="images/ClassicPyramids/yellowNormalPyramid.png" alt="Image 4" class="imageKlassik" id="imageKlassik4">
+              <img src="images/ClassicPyramids/orangeNormalPyramid.png" alt="Image 5" class="imageKlassik" id="imageKlassik5">
             </div>
+
+
+
+
+
+            <!--<div class="img-container">*/                                                                                              Code von mir!!                                                                                                  
+              <img class="basicProdukte" id="pyra-klassik" src="images/ClassicPyramids/REDnormalPyramid.png" alt="redClassic">
+            </div> -->
+
             <div class="text-container">
-              <h3>Rote Pyramide</h3>
+              <h3>Infos</h3>
               <p>- Klassiker unter den Pyramiden<br>
                 - hochglanz Farben<br>
                 - 200g Gewicht<br>
@@ -80,57 +96,24 @@
                 symmetrische Schönheit zu bewundern. Ihre vielfältigen Farben und Muster lassen keine Langeweile
                 aufkommen
                 und machen jedes Stück zu einem einzigartigen Sammlerobjekt.</p>
+              <br>
+              <br>
 
               <div class="sorten-Container">
 
-                <div class="sorte-rot">
-                  <div class="sorten">
-                    <a href="#"><img src="images/Classic Pyramids/icons/Polygon 2.png" alt="" width="auto"
-                        height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a  class="no-mobile"href="">Rot</a>
-                  </div>
+                <div class="color-button">
+                  <button class="sorten-buttons" onclick="showImageKlassisch(1)" autofocus><img
+                      src="images/ClassicPyramids/icons/Polygon 2.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageKlassisch(2)"><img
+                      src="images/ClassicPyramids/icons/Polygon 9.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageKlassisch(3)"><img
+                      src="images/ClassicPyramids/icons/Polygon 3.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageKlassisch(4)"><img
+                      src="images/ClassicPyramids/icons/Polygon 4.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageKlassisch(5)"><img
+                      src="images/ClassicPyramids/icons/Polygon 5.png" alt="" width="auto" height="20px"></button>
                 </div>
-
-                <div class="sorte-blau">
-                  <div class="sorten">
-                    <a href="#"><img src="images/Classic Pyramids/icons/Polygon 9.png" alt="" width="auto"
-                        height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a  class="no-mobile"href="#">Blau</a>
-                  </div>
-                </div>
-
-                <div class="sorte-grün">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/Classic Pyramids/icons/Polygon 3.png" alt="" width="auto"
-                        height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Grün</a>
-                  </div>
-                </div>
-
-                <div class="sorte-gelb">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/Classic Pyramids/icons/Polygon 4.png" alt="" width="auto"
-                        height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Gelb</a>
-                  </div>
-                </div>
-                <div class="sorte-orange">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/Classic Pyramids/icons/Polygon 5.png" alt="" width="auto"
-                        height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a  class="no-mobile"href="#">Orange</a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -148,64 +131,43 @@
           </div>
           <div class="content-container">
 
-            <div class="img-container">
-              <img src="images/Section2/pinkWaterPyramid.png" alt="pinkWater">
+            <div id="imageContainer" class="img-container"> 
+              <img src="images/Section2/pinkWaterPyramid.png" alt="Image 1" class="imageWasser" id="imageWasser1">
+              <img src="images/Section2/orangeWaterPyramid.png" alt="Image 2" class="imageWasser" id="imageWasser2">
+              <img src="images/Section2/blueWaterPyramid.png" alt=Image 3" class="imageWasser" id="imageWasser3">
+              <img src="images/Section2/greenWaterPyramid.png" alt="Image 4" class="imageWasser" id="imageWasser4">
+              <img src="images/Section2/redWaterPyramid.png" alt="Image 5" class="imageWasser" id="imageWasser5">
             </div>
+
             <div class="text-container">
-              <h3>Pinke Wasserpyramide</h3>
+              <h3>Infos</h3>
               <p>- Aufblasbare Pyramide <br>
                 - knallige Farben <br>
                 - 100% Spaß im Wasser <br>
                 - sammeln, tauschen, spielen
               </p>
-              <p class="no-mobile">Die Water Pyramids sind ein Hit für Poolpartys, Strandtage oder sogar für deinen eigenen Garten. Mit
+              <p class="no-mobile">Die Water Pyramids sind ein Hit für Poolpartys, Strandtage oder sogar für deinen
+                eigenen Garten. Mit
                 ihrer einzigartigen Pyramidenform sind sie der Blickfang schlechthin. Deine Freunde werden begeistert
                 sein
                 und sich darum reißen, mit diesen lustigen aufblasbaren Pyramiden zu spielen.</p>
+              <br>
+              <br>
               <div class="sorten-Container">
-                <div class="sorte-W-pink">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/Section2/Icons/Polygon 7.png" alt="" width="auto" height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Pink</a>
-                  </div>
-                </div>
 
-                <div class="sorte-W-orange">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/Section2/Icons/Polygon 6.png" alt="" width="auto" height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Orange</a>
-                  </div>
+                <div class="color-button">
+                  <button class="sorten-buttons" onclick="showImageWasser(1)" autofocus><img
+                      src="images/Section2/Icons/Polygon 7.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageWasser(2)"><img
+                      src="images/Section2/Icons/Polygon 6.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageWasser(3)"><img
+                      src="images/Section2/Icons/Polygon 9.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageWasser(4)"><img
+                      src="images/Section2/Icons/Polygon 8.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageWasser(5)"><img
+                      src="images/Section2/Icons/Polygon 10.png" alt="" width="auto" height="20px"></button>
                 </div>
-
-                <div class="sorte-W-grün">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/Section2/Icons/Polygon 8.png" alt="" width="auto" height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Grün</a>
-                  </div>
-                </div>
-                <div class="sorte-W-blau">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/Section2/Icons/Polygon 9.png" alt="" width="auto" height="20px"></a>
-                  </div>
-                  <div class="sorten-namen" class="sorten-namen">
-                    <a class="no-mobile" href="#">Blau</a>
-                  </div>
-                </div>
-
-                <div class="sorte-W-rot">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/Section2/Icons/Polygon 10.png" alt="" width="auto" height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Rot</a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -222,48 +184,37 @@
           </div>
           <div class="content-container">
 
-            <div class="img-container">
-              <img src="images/section3/bambooPyramid_produkt.png" alt="bamboo">
+            <div id="imageContainer" class="img-container"> <!--Code von Shu-->
+              <img src="images/section3/bambooPyramid_produkt.png" alt="Image 1" class="imageUmwelt" id="imageUmwelt1">
+              <img src="images/section3/EcoKartonPyramid.png" alt="Image 2" class="imageUmwelt" id="imageUmwelt2">
+              <img src="images/section3/EcoHolzPyramid.png" alt="Image 3" class="imageUmwelt" id="imageUmwelt3">
             </div>
+
             <div class="text-container">
-              <h3>Bambus Pyramide</h3>
+              <h3>Infos</h3>
               <p>- Umweltfreundlich <br>
                 - 100% nachhaltiges Material <br>
                 - einzigartiger Hingucker <br>
                 - Dekoartikel
               </p>
-              <p class="no-mobile">Die Eco Pyramids sind wahre Meisterwerke der Nachhaltigkeit. Sie werden aus recycelten und
+              <p class="no-mobile">Die Eco Pyramids sind wahre Meisterwerke der Nachhaltigkeit. Sie werden aus
+                recycelten und
                 umweltfreundlichen Materialien hergestellt, um unseren Planeten zu schützen und eine grüne Zukunft
                 zu
                 fördern. Mit jedem Kauf einer Eco Pyramid trägst du aktiv zum Erhalt unserer Umwelt bei.</p>
+              <br>
+              <br>
               <div class="sorten-Container">
-                <div class="sorte-bambus">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/section3/ICON/PNG/Element 1.png" alt="" width="auto"
-                        height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Bambus</a>
-                  </div>
+
+                <div class="color-button">
+                  <button class="sorten-buttons" onclick="showImageUmwelt(1)" autofocus><img
+                      src="images/section3/ICON/PNG/Element 2.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageUmwelt(2)"><img
+                      src="images/section3/ICON/PNG/Element 1.png" alt="" width="auto" height="20px"></button>
+                  <button class="sorten-buttons" onclick="showImageUmwelt(3)"><img
+                      src="images/section3/ICON/PNG/Element 3.png" alt="" width="auto" height="20px"></button>
                 </div>
-                <div class="sorte-karton">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/section3/ICON/PNG/Element 2.png" alt="" width="auto"
-                        height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Karton</a>
-                  </div>
-                </div>
-                <div class="sorte-zedernholz">
-                  <div class="sorten">
-                    <a href="#"> <img src="images/section3/ICON/PNG/Element 3.png" alt="" width="auto"
-                        height="20px"></a>
-                  </div>
-                  <div class="sorten-namen">
-                    <a class="no-mobile" href="#">Zedernholz</a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -276,13 +227,13 @@
     <div class="footer-wrapper">
       <div class="texte">
         <p>&copy; 2023 Pyracollect. Alle Rechte vorbehalten.</p>
-        <div class="footer-links">
+        <div class="footer-rechts">
           <ul>
-              <li><a href="#">SITE MAP</a></li>
-              <li><a href="#">IMPRESSUM</a></li>
-              <li><a href="#">AGB</a></li>
-              <li><a href="#">Datenschutz</a></li>
-              <li><a href="#">COOKIES</a></li>
+            <li><a href="#">SITE MAP</a></li>
+            <li><a href="#">IMPRESSUM</a></li>
+            <li><a href="#">AGB</a></li>
+            <li><a href="#">DATENSCHUTZ</a></li>
+            <li><a href="#">COOKIES</a></li>
           </ul>
         </div>
       </div>
